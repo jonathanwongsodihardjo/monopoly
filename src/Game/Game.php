@@ -42,6 +42,7 @@ class Game
                 $currentPlayerIndex = ($currentPlayerIndex + 1) % count($players);
             } catch (BankruptException) {
                 // Current player has gone bankrupt. Ends the game here.
+                break;
             }
         }
 

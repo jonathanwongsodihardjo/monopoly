@@ -18,7 +18,7 @@ class Board
     public function __construct(
         private readonly int $income,
         private readonly array $boardData,
-        public private(set) readonly array $players = []
+        private(set) readonly array $players = []
     ) {}
 
     /**
