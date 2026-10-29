@@ -34,3 +34,103 @@
 - This scenario is prepared in order to test the game's ability to handle multiple winners.
 - My expectations were that all players would end up with the same amount of money after the rolls, and that the game would correctly identify all players as winners.
 - My expectations were met, and all players ended up with the same amount of money after the rolls, and the game correctly identified all players as winners.
+- Output (JSON):
+```shell
+Running Monopoly simulation...
+{
+    "winners": [
+        "Peter",
+        "Billy",
+        "Charlotte",
+        "Sweedal"
+    ],
+    "players": [
+        {
+            "name": "Peter",
+            "money": "11.0",
+            "position": "Gami Chicken"
+        },
+        {
+            "name": "Billy",
+            "money": "11.0",
+            "position": "Massizim"
+        },
+        {
+            "name": "Charlotte",
+            "money": "11.0",
+            "position": "Gami Chicken"
+        },
+        {
+            "name": "Sweedal",
+            "money": "11.0",
+            "position": "Massizim"
+        }
+    ]
+}
+Simulation completed successfully!
+```
+
+## Rolls_1 Output (JSON)
+```shell
+Running Monopoly simulation...
+{
+    "winners": [
+        "Peter"
+    ],
+    "players": [
+        {
+            "name": "Peter",
+            "money": "48.5",
+            "position": "Lanzhou Beef Noodle"
+        },
+        {
+            "name": "Billy",
+            "money": "10.0",
+            "position": "Gami Chicken"
+        },
+        {
+            "name": "Charlotte",
+            "money": "5.5",
+            "position": "Betty's Burgers"
+        },
+        {
+            "name": "Sweedal",
+            "money": "3.0",
+            "position": "Gami Chicken"
+        }
+    ]
+}
+```
+
+## Rolls_2 Output (JSON)
+```shell
+Running Monopoly simulation...
+{
+    "winners": [
+        "Charlotte"
+    ],
+    "players": [
+        {
+            "name": "Charlotte",
+            "money": "41.0",
+            "position": "GO"
+        },
+        {
+            "name": "Billy",
+            "money": "27.0",
+            "position": "Gami Chicken"
+        },
+        {
+            "name": "Peter",
+            "money": "11.0",
+            "position": "Massizim"
+        },
+        {
+            "name": "Sweedal",
+            "money": "0.0",
+            "position": "Gami Chicken"
+        }
+    ]
+}
+Simulation completed successfully!
+```
