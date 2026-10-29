@@ -10,7 +10,7 @@
 7. Running script with JSON Output: `php bin/monopoly <BOARD_FILE> <ROLL_FILE> -j` or `php bin/monopoly <BOARD_FILE> <ROLL_FILE> --json`
 
 ## Normal Installation (Install only required items)
-1. Install Laravel Herd: 1. Install Laravel Herd: https://github.com/laravel/herd
+1. Install Laravel Herd: https://github.com/laravel/herd
 2. Install PHP version >= 8.4
 3. Composer package management should be automatically installed
 4. Generate auto-load files via: `composer install --no-dev`
@@ -80,26 +80,27 @@ Running Monopoly simulation...
     "players": [
         {
             "name": "Peter",
-            "money": "48.5",
+            "money": "47.5",
             "position": "Lanzhou Beef Noodle"
         },
         {
             "name": "Billy",
-            "money": "10.0",
+            "money": "9.0",
             "position": "Gami Chicken"
         },
         {
             "name": "Charlotte",
-            "money": "5.5",
+            "money": "3.5",
             "position": "Betty's Burgers"
         },
         {
             "name": "Sweedal",
-            "money": "3.0",
+            "money": "1.0",
             "position": "Gami Chicken"
         }
     ]
 }
+Simulation completed successfully!
 ```
 
 ## Rolls_2 Output (JSON)
@@ -112,22 +113,22 @@ Running Monopoly simulation...
     "players": [
         {
             "name": "Charlotte",
-            "money": "41.0",
+            "money": "38.0",
             "position": "GO"
         },
         {
             "name": "Billy",
-            "money": "27.0",
+            "money": "25.0",
             "position": "Gami Chicken"
         },
         {
             "name": "Peter",
-            "money": "11.0",
+            "money": "9.0",
             "position": "Massizim"
         },
         {
             "name": "Sweedal",
-            "money": "0.0",
+            "money": "-1.0",
             "position": "Gami Chicken"
         }
     ]

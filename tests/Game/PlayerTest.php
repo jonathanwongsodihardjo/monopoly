@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
+namespace Game;
+
+use InvalidArgumentException;
 use Monopoly\Exception\BankruptException;
 use Monopoly\Game\Player;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-
 class PlayerTest extends TestCase
 {
     /**

@@ -39,7 +39,7 @@ class Board
         $newPosition = ($oldPosition + $rollAmount) % count($this->boardData);
 
         // Player has passed through go, collect income
-        if ($newPosition < $oldPosition) {
+        if ($newPosition > 0 && $newPosition < $oldPosition) {
             $this->players[$playerIndex]->receive((string)$this->income);
         }
         $this->players[$playerIndex]->moveTo($newPosition);
