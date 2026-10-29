@@ -1,5 +1,7 @@
 # Monopoly Simulator
 
+This project was created in PHP because it is the language I am most familiar with and have used the longest.
+
 ## Full Installation (Includes Automated Testing)
 1. Install Laravel Herd: https://github.com/laravel/herd
 2. Install PHP version >= 8.4
