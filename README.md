@@ -30,6 +30,7 @@ This project was created in PHP because it is the language I am most familiar wi
 3. A property colour group must have at least 2 properties, it cannot be just one property
 4. Winners are the player(s) with the highest amount of money. There can be multiple winners as long as they have the same amount
 5. A dice roll is a random number between 1 and 6
+6. Go is always treated as the first position in the board game data.
 
 ## Rolls_3
 - I aimed to create a 10-roll scenario where all the players have the same amount of money, so all of them are the winnners

@@ -15,9 +15,11 @@ class Game
 {
     /**
      * @param Config|null $config
+     * @param Board|null $board
      */
     public function __construct(
-        private ?Config $config = null,
+        private ?Config         $config = null,
+        private readonly ?Board $board = null,
     ) {
         $this->config = $config ?? new Config();
     }
@@ -33,7 +35,7 @@ class Game
         $boardData = $this->parseBoard($board);
         $players = $this->getPlayers();
 
-        $board = new Board($this->config->goSalary, $boardData, $players);
+        $board = $this->board ?? new Board($this->config->goSalary, $boardData, $players);
 
         $currentPlayerIndex = 0;
         foreach ($rolls as $roll) {

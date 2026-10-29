@@ -34,12 +34,16 @@ class Board
             throw new InvalidArgumentException("Invalid player index $playerIndex");
         }
 
+        if ($rollAmount < 1) {
+            throw new InvalidArgumentException("Invalid roll amount $rollAmount");
+        }
+
         // Calculate new position with board wrap-around
         $oldPosition = $this->players[$playerIndex]->position;
         $newPosition = ($oldPosition + $rollAmount) % count($this->boardData);
 
         // Player has passed through go, collect income
-        if ($newPosition > 0 && $newPosition < $oldPosition) {
+        if ($newPosition > 0 && $newPosition <= $oldPosition) {
             $this->players[$playerIndex]->receive((string)$this->income);
         }
         $this->players[$playerIndex]->moveTo($newPosition);
